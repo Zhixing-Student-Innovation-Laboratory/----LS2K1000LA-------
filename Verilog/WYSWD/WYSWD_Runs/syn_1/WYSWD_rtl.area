@@ -1,0 +1,57 @@
+standard
+***Report Model: WYSWD Device: EG4S20BG256***
+
+IO Statistics
+#IO                        80
+  #input                   42
+  #output                  38
+  #inout                    0
+
+Gate Statistics
+#Basic gates            14899
+  #and                    259
+  #nand                     0
+  #or                    1051
+  #nor                      0
+  #xor                      1
+  #xnor                     0
+  #buf                      0
+  #not                     83
+  #bufif1                   0
+  #MX21                  6774
+  #FADD                     0
+  #DFF                   6731
+  #LATCH                    0
+#MACRO_ADD                157
+#MACRO_EQ                  27
+#MACRO_MULT                 2
+#MACRO_MUX                219
+#MACRO_OTHERS               1
+
+Report Hierarchy Area:
++--------------------------------------------------------------+
+|Instance            |Module           |gates  |seq    |macros |
++--------------------------------------------------------------+
+|top                 |WYSWD            |8168   |6731   |187    |
+|  ADC_init          |ADC              |4      |44     |5      |
+|  DAC_init          |DAC              |25     |67     |18     |
+|  KEY_init          |KEY              |12     |69     |18     |
+|    bianmaqi_init1  |bianmaqi         |3      |25     |6      |
+|      clock1        |clock            |1      |17     |2      |
+|      xiaodou_init1 |xiaodou          |1      |2      |0      |
+|      xiaodou_init2 |xiaodou          |1      |2      |0      |
+|    bianmaqi_init2  |bianmaqi         |2      |8      |4      |
+|      xiaodou_init1 |xiaodou          |1      |2      |0      |
+|      xiaodou_init2 |xiaodou          |1      |2      |0      |
+|    bianmaqi_init3  |bianmaqi         |2      |8      |4      |
+|      xiaodou_init1 |xiaodou          |1      |2      |0      |
+|      xiaodou_init2 |xiaodou          |1      |2      |0      |
+|    bianmaqi_init4  |bianmaqi_dingzhi |2      |14     |4      |
+|      xiaodou_init1 |xiaodou          |1      |2      |0      |
+|      xiaodou_init2 |xiaodou          |1      |2      |0      |
+|  divider_init      |divider          |2      |25     |4      |
+|  pll_init          |PLL              |0      |0      |1      |
+|  sending_init      |sending          |8121   |6526   |141    |
+|    tx_init1        |tx               |6      |23     |5      |
+|    tx_init2        |tx               |0      |1      |0      |
++--------------------------------------------------------------+

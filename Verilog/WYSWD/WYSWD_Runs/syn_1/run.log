@@ -1,0 +1,687 @@
+============================================================
+   Tang Dynasty, V5.6.71036
+      Copyright (c) 2012-2023 Anlogic Inc.
+   Executable = E:/TD562/bin/td.exe
+   Built at =   20:34:38 Mar 21 2023
+   Run by =     ’≈≤©∫≠
+   Run Date =   Wed Jul 10 09:54:55 2024
+
+   Run on =     BOBBY
+============================================================
+RUN-1002 : start command "open_project WYSWD.prj"
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+HDL-1007 : analyze verilog file ../../IP/PLL.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../IP/PLL.v(70)
+HDL-1007 : analyze verilog file ../../prj/WYSWD.v
+HDL-1007 : analyze verilog file ../../prj/ADC.v
+HDL-1007 : analyze verilog file ../../prj/KEY.v
+HDL-1007 : analyze verilog file ../../prj/DAC.v
+HDL-1007 : analyze verilog file ../../prj/xiaodou.v
+HDL-1007 : analyze verilog file ../../prj/clock.v
+HDL-1007 : analyze verilog file ../../prj/bianmaqi.v
+HDL-1007 : analyze verilog file ../../prj/sending.v
+HDL-1007 : analyze verilog file ../../prj/tx.v
+HDL-5007 WARNING: parameter 'BAUD_CNT_MAX' becomes localparam in 'tx' with formal parameter declaration list in ../../prj/tx.v(15)
+HDL-1007 : analyze verilog file ../../prj/divider.v
+HDL-1007 : analyze verilog file ../../prj/bianmaqi_dingzhi.v
+RUN-1001 : Project manager successfully analyzed 12 source files.
+RUN-1002 : start command "import_device eagle_s20.db -package EG4S20BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "elaborate -top WYSWD"
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+HDL-1007 : elaborate module WYSWD in ../../prj/WYSWD.v(1)
+HDL-1007 : elaborate module PLL in ../../IP/PLL.v(23)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in E:/TD562/arch/eagle_macro.v(8)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="50.000",FBCLK_DIV=4,CLKC0_DIV=5,CLKC1_DIV=100,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=4,CLKC1_CPHASE=99,GMC_GAIN=4,ICP_CURRENT=13,KVCO=4,LPF_CAPACITOR=1,LPF_RESISTOR=4,SYNC_ENABLE="DISABLE") in E:/TD562/arch/eagle_macro.v(930)
+HDL-1007 : elaborate module sending in ../../prj/sending.v(1)
+HDL-1007 : extracting RAM for identifier 'ADC2_data400' in ../../prj/sending.v(24)
+HDL-1007 : elaborate module tx(UART_BPS=18'b011100001000000000,CLK_FREQ=28'b010111110101111000010000000) in ../../prj/tx.v(1)
+HDL-5007 WARNING: net 'UART1_send[7]' does not have a driver in ../../prj/sending.v(42)
+HDL-1007 : elaborate module ADC in ../../prj/ADC.v(1)
+HDL-1007 : elaborate module DAC in ../../prj/DAC.v(1)
+HDL-1007 : elaborate module KEY in ../../prj/KEY.v(1)
+HDL-1007 : elaborate module bianmaqi in ../../prj/bianmaqi.v(1)
+HDL-1007 : elaborate module clock(pam=16'b1100001101001111) in ../../prj/clock.v(1)
+HDL-1007 : elaborate module clock(pam=20'b11110100001000111111) in ../../prj/clock.v(1)
+HDL-1007 : elaborate module xiaodou in ../../prj/xiaodou.v(1)
+HDL-1007 : elaborate module bianmaqi_dingzhi in ../../prj/bianmaqi_dingzhi.v(1)
+HDL-1007 : elaborate module divider(frequency1=10'b01100100,frequency2=21'b0110000110101000000) in ../../prj/divider.v(1)
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+HDL-1200 : Current top model is WYSWD
+HDL-1100 : Inferred 1 RAMs.
+RUN-1002 : start command "export_db WYSWD_elaborate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "read_adc ../../PIN/pin.adc"
+RUN-1002 : start command "set_pin_assignment  ADC1_CLK   LOCATION = P12; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  ADC1_data[0]   LOCATION = R16; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC1_data[10]   LOCATION = P8; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC1_data[11]   LOCATION = P7; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC1_data[1]   LOCATION = M12; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC1_data[2]   LOCATION = N12; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC1_data[3]   LOCATION = M10; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC1_data[4]   LOCATION = P11; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC1_data[5]   LOCATION = P9; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC1_data[6]   LOCATION = L10; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC1_data[7]   LOCATION = M9; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC1_data[8]   LOCATION = N9; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC1_data[9]   LOCATION = N8; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC1_flag   LOCATION = F3; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  ADC1_ouhe   LOCATION = F2; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC1_ouhe_display   LOCATION = E3; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  ADC1_ouhe_mode   LOCATION = M11; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  ADC1_tx   LOCATION = C7; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  ADC2_CLK   LOCATION = T15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  ADC2_data[0]   LOCATION = R15; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC2_data[10]   LOCATION = N5; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC2_data[11]   LOCATION = T12; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC2_data[1]   LOCATION = T14; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC2_data[2]   LOCATION = R14; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC2_data[3]   LOCATION = L7; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC2_data[4]   LOCATION = M7; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC2_data[5]   LOCATION = N6; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC2_data[6]   LOCATION = P6; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC2_data[7]   LOCATION = P5; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC2_data[8]   LOCATION = M6; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC2_data[9]   LOCATION = T13; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC2_ouhe   LOCATION = H1; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ADC2_ouhe_display   LOCATION = F5; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  ADC2_ouhe_mode   LOCATION = L12; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  ADC2_tx   LOCATION = F7; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  CH1_A   LOCATION = G1; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  CH1_B   LOCATION = H2; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  CH1_num[0]   LOCATION = D6; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  CH1_num[1]   LOCATION = C5; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  CH1_num[2]   LOCATION = C4; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  CH1_num[3]   LOCATION = B3; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  CH2_A   LOCATION = K1; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  CH2_B   LOCATION = K2; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  CH2_num[0]   LOCATION = B2; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  CH2_num[1]   LOCATION = B1; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  CH2_num[2]   LOCATION = C1; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  CH2_num[3]   LOCATION = E4; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  CLK_100K   LOCATION = P14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  CLK_50M   LOCATION = R7; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  DIN   LOCATION = E15; IOSTANDARD = LVCMOS25; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  LDAC   LOCATION = G14; IOSTANDARD = LVCMOS25; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  READ_flag   LOCATION = D5; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  REALY_AD1[0]   LOCATION = N14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  REALY_AD1[1]   LOCATION = P16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  REALY_AD2[0]   LOCATION = L16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  REALY_AD2[1]   LOCATION = M16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  SAVE_flag   LOCATION = F6; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  SCLK   LOCATION = D14; IOSTANDARD = LVCMOS25; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  STOP_flag   LOCATION = A2; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  SYNC   LOCATION = F14; IOSTANDARD = LVCMOS25; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  Single_flag   LOCATION = C3; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  TIG_A   LOCATION = M5; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  TIG_B   LOCATION = D1; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  TIG_flag   LOCATION = M14; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  X_A   LOCATION = L4; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  X_B   LOCATION = M2; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  X_num[0]   LOCATION = D8; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  X_num[1]   LOCATION = E7; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  X_num[2]   LOCATION = C6; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  X_num[3]   LOCATION = E6; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  bianyan_flag   LOCATION = C2; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  bianyan_key   LOCATION = M3; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  rst_n   LOCATION = K12; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  state[0]   LOCATION = B14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  state[1]   LOCATION = B15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  state[2]   LOCATION = B16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1001 : Starting of IO setups legality check.
+RUN-1001 : Starting of IO setups legality check.
+RUN-1001 : Starting of IO vref setups legality check.
+USR-6010 WARNING: ADC constraints: top model pin READ_key has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin SAVE_key has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin STOP_key has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin Single_key has no constraint.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file E:/TD562/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+SYN-1012 : SanityCheck: Model "WYSWD"
+SYN-1012 : SanityCheck: Model "ADC"
+SYN-1012 : SanityCheck: Model "DAC"
+SYN-1012 : SanityCheck: Model "KEY"
+SYN-1012 : SanityCheck: Model "bianmaqi"
+SYN-1012 : SanityCheck: Model "clock(pam=16'b1100001101001111)"
+SYN-1012 : SanityCheck: Model "clock(pam=20'b11110100001000111111)"
+SYN-1012 : SanityCheck: Model "xiaodou"
+SYN-1012 : SanityCheck: Model "bianmaqi_dingzhi"
+SYN-1012 : SanityCheck: Model "divider(frequency1=10'b01100100,frequency2=21'b0110000110101000000)"
+SYN-1012 : SanityCheck: Model "PLL"
+SYN-1012 : SanityCheck: Model "sending"
+SYN-1012 : SanityCheck: Model "tx(UART_BPS=18'b011100001000000000,CLK_FREQ=28'b010111110101111000010000000)"
+SYN-1043 : Mark PLL as IO macro for instance bufg_feedback
+SYN-1011 : Flatten model WYSWD
+SYN-1032 : 11729/691 useful/useless nets, 5285/30 useful/useless insts
+SYN-1001 : Optimize 130 less-than instances
+SYN-1016 : Merged 2399 instances.
+SYN-1025 : Merged 10 RAM ports.
+SYN-1024 : Implement RAM sending_init/ramread0_dup_728(ram_w9x8_w9x8_r9x8_0).
+SYN-1025 : Merged 10 RAM ports.
+SYN-1024 : Implement RAM sending_init/ramread0_dup_22943(ram_w9x8_w9x8_r9x8_2).
+SYN-1032 : 18887/18968 useful/useless nets, 10172/7233 useful/useless insts
+SYN-1016 : Merged 5830 instances.
+SYN-5011 WARNING: Undriven pin: model "WYSWD" / inst "DAC_init/sel0_syn_18" in ../../prj/DAC.v(131) / pin "i1"
+SYN-5011 WARNING: Undriven pin: model "WYSWD" / inst "DAC_init/sel0_syn_22" in ../../prj/DAC.v(131) / pin "i0"
+SYN-5011 WARNING: Undriven pin: model "WYSWD" / inst "DAC_init/sel0_syn_22" in ../../prj/DAC.v(131) / pin "i1"
+SYN-5011 WARNING: Undriven pin: model "WYSWD" / inst "DAC_init/sel0_syn_26" in ../../prj/DAC.v(131) / pin "i1"
+SYN-5013 WARNING: Undriven net: model "WYSWD" / net "sending_init/tx_init1/pi_data[7]" in ../../prj/tx.v(9)
+SYN-5014 WARNING: the net's pin: pin "i8" in ../../prj/tx.v(58)
+SYN-5013 WARNING: Undriven net: model "WYSWD" / net "sending_init/tx_init1/pi_data[6]" in ../../prj/tx.v(9)
+SYN-5014 WARNING: the net's pin: pin "i7" in ../../prj/tx.v(58)
+SYN-5013 WARNING: Undriven net: model "WYSWD" / net "sending_init/tx_init1/pi_data[5]" in ../../prj/tx.v(9)
+SYN-5014 WARNING: the net's pin: pin "i6" in ../../prj/tx.v(58)
+SYN-5013 WARNING: Undriven net: model "WYSWD" / net "sending_init/tx_init1/pi_data[4]" in ../../prj/tx.v(9)
+SYN-5014 WARNING: the net's pin: pin "i5" in ../../prj/tx.v(58)
+SYN-5013 WARNING: Undriven net: model "WYSWD" / net "sending_init/tx_init1/pi_data[3]" in ../../prj/tx.v(9)
+SYN-5014 WARNING: the net's pin: pin "i4" in ../../prj/tx.v(58)
+SYN-5013 WARNING: Undriven net: model "WYSWD" / net "sending_init/tx_init1/pi_data[2]" in ../../prj/tx.v(9)
+SYN-5014 WARNING: the net's pin: pin "i3" in ../../prj/tx.v(58)
+SYN-5013 WARNING: Undriven net: model "WYSWD" / net "sending_init/tx_init1/pi_data[1]" in ../../prj/tx.v(9)
+SYN-5014 WARNING: the net's pin: pin "i2" in ../../prj/tx.v(58)
+SYN-5013 WARNING: Undriven net: model "WYSWD" / net "sending_init/tx_init1/pi_data[0]" in ../../prj/tx.v(9)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../prj/tx.v(58)
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-1032 : 18763/35 useful/useless nets, 16422/206 useful/useless insts
+SYN-1014 : Optimize round 1
+SYN-1032 : 18715/48 useful/useless nets, 16422/0 useful/useless insts
+SYN-1017 : Remove 4 const input seq instances
+SYN-1002 :     ADC_init/reg0_syn_21
+SYN-1002 :     DAC_init/reg9_syn_4
+SYN-1002 :     KEY_init/bianmaqi_init1/clock1/reg0_syn_18
+SYN-1002 :     divider_init/reg0_syn_10
+SYN-1019 : Optimized 23 mux instances.
+SYN-1021 : Optimized 7215 onehot mux instances.
+SYN-1020 : Optimized 51 distributor mux.
+SYN-1001 : Optimize 3 less-than instances
+SYN-1019 : Optimized 16 mux instances.
+SYN-1016 : Merged 101 instances.
+SYN-1015 : Optimize round 1, 7966 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 2 inv instances.
+SYN-1032 : 17610/60 useful/useless nets, 15325/86 useful/useless insts
+SYN-1017 : Remove 1 const input seq instances
+SYN-1002 :     DAC_init/reg0_syn_2
+SYN-1019 : Optimized 2 mux instances.
+SYN-1015 : Optimize round 2, 215 better
+SYN-1032 : 17597/9 useful/useless nets, 15314/6 useful/useless insts
+SYN-3004 : Optimized 1 const0 DFF(s)
+SYN-3004 : Optimized 1 const0 DFF(s)
+SYN-1032 : 17593/4 useful/useless nets, 15312/0 useful/useless insts
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 9 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 17591/2 useful/useless nets, 15312/0 useful/useless insts
+SYN-1015 : Optimize round 2, 0 better
+RUN-1003 : finish command "optimize_rtl" in  15.825889s wall, 14.625000s user + 1.187500s system = 15.812500s CPU (99.9%)
+
+RUN-1004 : used memory is 175 MB, reserved memory is 144 MB, peak memory is 209 MB
+RUN-1002 : start command "report_area -file WYSWD_rtl.area"
+RUN-1001 : standard
+***Report Model: WYSWD Device: EG4S20BG256***
+
+IO Statistics
+#IO                        80
+  #input                   42
+  #output                  38
+  #inout                    0
+
+Gate Statistics
+#Basic gates            14899
+  #and                    259
+  #nand                     0
+  #or                    1051
+  #nor                      0
+  #xor                      1
+  #xnor                     0
+  #buf                      0
+  #not                     83
+  #bufif1                   0
+  #MX21                  6774
+  #FADD                     0
+  #DFF                   6731
+  #LATCH                    0
+#MACRO_ADD                157
+#MACRO_EQ                  27
+#MACRO_MULT                 2
+#MACRO_MUX                219
+#MACRO_OTHERS               1
+
+Report Hierarchy Area:
++--------------------------------------------------------------+
+|Instance            |Module           |gates  |seq    |macros |
++--------------------------------------------------------------+
+|top                 |WYSWD            |8168   |6731   |187    |
+|  ADC_init          |ADC              |4      |44     |5      |
+|  DAC_init          |DAC              |25     |67     |18     |
+|  KEY_init          |KEY              |12     |69     |18     |
+|    bianmaqi_init1  |bianmaqi         |3      |25     |6      |
+|      clock1        |clock            |1      |17     |2      |
+|      xiaodou_init1 |xiaodou          |1      |2      |0      |
+|      xiaodou_init2 |xiaodou          |1      |2      |0      |
+|    bianmaqi_init2  |bianmaqi         |2      |8      |4      |
+|      xiaodou_init1 |xiaodou          |1      |2      |0      |
+|      xiaodou_init2 |xiaodou          |1      |2      |0      |
+|    bianmaqi_init3  |bianmaqi         |2      |8      |4      |
+|      xiaodou_init1 |xiaodou          |1      |2      |0      |
+|      xiaodou_init2 |xiaodou          |1      |2      |0      |
+|    bianmaqi_init4  |bianmaqi_dingzhi |2      |14     |4      |
+|      xiaodou_init1 |xiaodou          |1      |2      |0      |
+|      xiaodou_init2 |xiaodou          |1      |2      |0      |
+|  divider_init      |divider          |2      |25     |4      |
+|  pll_init          |PLL              |0      |0      |1      |
+|  sending_init      |sending          |8121   |6526   |141    |
+|    tx_init1        |tx               |6      |23     |5      |
+|    tx_init2        |tx               |0      |1      |0      |
++--------------------------------------------------------------+
+
+RUN-1002 : start command "export_db WYSWD_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "optimize_gate -maparea WYSWD_gate.area"
+RUN-1001 : Open license file E:/TD562/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Gate Property
+RUN-1001 : ------------------------------------------------------------------
+RUN-1001 :          Parameters         |  Settings  |  Default Values  |  Note  
+RUN-1001 : ------------------------------------------------------------------
+RUN-1001 :         cascade_dsp         |    off     |       off        |        
+RUN-1001 :         cascade_eram        |    off     |       off        |        
+RUN-1001 :        gate_sim_model       |    off     |       off        |        
+RUN-1001 :        map_sim_model        |    off     |       off        |        
+RUN-1001 :         map_strategy        |     1      |        1         |        
+RUN-1001 :           opt_area          |   medium   |      medium      |        
+RUN-1001 :          opt_timing         |    auto    |       auto       |        
+RUN-1001 :         pack_effort         |   medium   |      medium      |        
+RUN-1001 :      pack_lslice_ripple     |     on     |        on        |        
+RUN-1001 :   pack_lslice_ripple_ratio  |    0.5     |       0.5        |        
+RUN-1001 :        pack_seq_in_io       |    auto    |       auto       |        
+RUN-1001 :        ph1_mux_ratio        |    1.0     |       1.0        |        
+RUN-1001 :            report           |  standard  |     standard     |        
+RUN-1001 :           retiming          |    off     |       off        |        
+RUN-1001 : ------------------------------------------------------------------
+SYN-2001 : Map 80 IOs to PADs
+SYN-1032 : 17658/13 useful/useless nets, 15371/21 useful/useless insts
+RUN-1002 : start command "update_pll_param -module WYSWD"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 BUFG to GCLK
+SYN-2571 : Map 2 macro multiplier
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 17628/30 useful/useless nets, 15372/0 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-1001 : Throwback 53 control mux instances
+SYN-2501 : Optimize round 1
+SYN-1032 : 17959/398 useful/useless nets, 15717/0 useful/useless insts
+SYN-1016 : Merged 33 instances.
+SYN-2501 : Optimize round 1, 642 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 155 macro adder
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-2501 : Inferred 46 ROM instances
+SYN-1019 : Optimized 948 mux instances.
+SYN-1016 : Merged 10197 instances.
+SYN-1032 : 25737/2920 useful/useless nets, 25089/448 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=5, #lut = 12819 (3.75), #lev = 8 (7.25)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=5, #lut = 12819 (3.75), #lev = 8 (7.25)
+SYN-3001 : Logic optimization runtime opt =   4.26 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 16942 instances into 12845 LUTs, name keeping = 78%.
+SYN-3001 : Mapper removed 2 lut buffers
+RUN-1002 : start command "report_area -file WYSWD_gate.area"
+RUN-1001 : standard
+***Report Model: WYSWD Device: EG4S20BG256***
+
+IO Statistics
+#IO                        80
+  #input                   42
+  #output                  38
+  #inout                    0
+
+LUT Statistics
+#Total_luts             14193
+  #lut4                 11988
+  #lut5                   901
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b            1304
+
+Utilization Statistics
+#lut                    14193   out of  19600   72.41%
+#reg                     6710   out of  19600   34.23%
+#le                         0
+#dsp                        2   out of     29    6.90%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       80   out of    188   42.55%
+  #ireg                    15
+  #oreg                    36
+  #treg                     0
+#pll                        1   out of      4   25.00%
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------------------+
+|Instance            |Module           |lut     |ripple  |seq     |bram    |dsp     |
++-----------------------------------------------------------------------------------+
+|top                 |WYSWD            |12889   |1304    |6761    |0       |2       |
+|  ADC_init          |ADC              |36      |41      |44      |0       |0       |
+|  DAC_init          |DAC              |105     |35      |67      |0       |0       |
+|  KEY_init          |KEY              |51      |81      |50      |0       |0       |
+|    bianmaqi_init1  |bianmaqi         |7       |35      |23      |0       |0       |
+|      clock1        |clock            |1       |35      |17      |0       |0       |
+|      xiaodou_init1 |xiaodou          |1       |0       |1       |0       |0       |
+|      xiaodou_init2 |xiaodou          |1       |0       |1       |0       |0       |
+|    bianmaqi_init2  |bianmaqi         |6       |0       |6       |0       |0       |
+|      xiaodou_init1 |xiaodou          |1       |0       |1       |0       |0       |
+|      xiaodou_init2 |xiaodou          |1       |0       |1       |0       |0       |
+|    bianmaqi_init3  |bianmaqi         |9       |0       |6       |0       |0       |
+|      xiaodou_init1 |xiaodou          |1       |0       |1       |0       |0       |
+|      xiaodou_init2 |xiaodou          |1       |0       |1       |0       |0       |
+|    bianmaqi_init4  |bianmaqi_dingzhi |22      |46      |12      |0       |0       |
+|      xiaodou_init1 |xiaodou          |1       |0       |1       |0       |0       |
+|      xiaodou_init2 |xiaodou          |1       |0       |1       |0       |0       |
+|  divider_init      |divider          |9       |52      |25      |0       |0       |
+|  pll_init          |PLL              |0       |0       |0       |0       |0       |
+|  sending_init      |sending          |12688   |178     |6524    |0       |2       |
+|    tx_init1        |tx               |33      |17      |22      |0       |0       |
+|    tx_init2        |tx               |5       |0       |0       |0       |0       |
++-----------------------------------------------------------------------------------+
+
+SYN-1001 : Packing model "WYSWD" ...
+SYN-4010 : Pack lib has 58 rtl pack models with 25 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 6710 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 57 carry chain into lslice
+SYN-4007 : Packing 643 adder to BLE ...
+SYN-4008 : Packed 643 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+RUN-1003 : finish command "optimize_gate -maparea WYSWD_gate.area" in  22.370683s wall, 21.750000s user + 0.453125s system = 22.203125s CPU (99.3%)
+
+RUN-1004 : used memory is 269 MB, reserved memory is 239 MB, peak memory is 269 MB
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model WYSWD
+RUN-1002 : start command "export_db WYSWD_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "backup_run_log run.log ../.logs/syn_1/td_20240710_095455.log"
+RUN-1001 : Backing up run's log file succeed.

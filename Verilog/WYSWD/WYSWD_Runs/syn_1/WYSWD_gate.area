@@ -1,0 +1,59 @@
+standard
+***Report Model: WYSWD Device: EG4S20BG256***
+
+IO Statistics
+#IO                        80
+  #input                   42
+  #output                  38
+  #inout                    0
+
+LUT Statistics
+#Total_luts             14193
+  #lut4                 11988
+  #lut5                   901
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b            1304
+
+Utilization Statistics
+#lut                    14193   out of  19600   72.41%
+#reg                     6710   out of  19600   34.23%
+#le                         0
+#dsp                        2   out of     29    6.90%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       80   out of    188   42.55%
+  #ireg                    15
+  #oreg                    36
+  #treg                     0
+#pll                        1   out of      4   25.00%
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------------------+
+|Instance            |Module           |lut     |ripple  |seq     |bram    |dsp     |
++-----------------------------------------------------------------------------------+
+|top                 |WYSWD            |12889   |1304    |6761    |0       |2       |
+|  ADC_init          |ADC              |36      |41      |44      |0       |0       |
+|  DAC_init          |DAC              |105     |35      |67      |0       |0       |
+|  KEY_init          |KEY              |51      |81      |50      |0       |0       |
+|    bianmaqi_init1  |bianmaqi         |7       |35      |23      |0       |0       |
+|      clock1        |clock            |1       |35      |17      |0       |0       |
+|      xiaodou_init1 |xiaodou          |1       |0       |1       |0       |0       |
+|      xiaodou_init2 |xiaodou          |1       |0       |1       |0       |0       |
+|    bianmaqi_init2  |bianmaqi         |6       |0       |6       |0       |0       |
+|      xiaodou_init1 |xiaodou          |1       |0       |1       |0       |0       |
+|      xiaodou_init2 |xiaodou          |1       |0       |1       |0       |0       |
+|    bianmaqi_init3  |bianmaqi         |9       |0       |6       |0       |0       |
+|      xiaodou_init1 |xiaodou          |1       |0       |1       |0       |0       |
+|      xiaodou_init2 |xiaodou          |1       |0       |1       |0       |0       |
+|    bianmaqi_init4  |bianmaqi_dingzhi |22      |46      |12      |0       |0       |
+|      xiaodou_init1 |xiaodou          |1       |0       |1       |0       |0       |
+|      xiaodou_init2 |xiaodou          |1       |0       |1       |0       |0       |
+|  divider_init      |divider          |9       |52      |25      |0       |0       |
+|  pll_init          |PLL              |0       |0       |0       |0       |0       |
+|  sending_init      |sending          |12688   |178     |6524    |0       |2       |
+|    tx_init1        |tx               |33      |17      |22      |0       |0       |
+|    tx_init2        |tx               |5       |0       |0       |0       |0       |
++-----------------------------------------------------------------------------------+
